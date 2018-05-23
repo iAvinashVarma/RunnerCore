@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>RunnerCLI</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Factory\AV.Middle.Common.Factory.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Section\AV.Middle.Common.Section.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.CheckInformation\AV.Middle.Reflector.CheckInformation.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.ExecuteCommand\AV.Middle.Reflector.SqlServerCompiler.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileConverter\AV.Middle.Reflector.FileConverter.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileReader\AV.Middle.Reflector.FileReader.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Configure\AV.Middle.Common.Configure.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.TfsChecker\AV.Middle.Reflector.TfsChecker.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.UpdateRoles\AV.Middle.Reflector.MultiReplacer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\SqlServerCompiler\Run.BAT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\FileConverter\ConverToJSON.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\MultiReplacer\Run.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\SqlServerCompiler\Sample.lst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\SqlServerCompiler\Scripts\dbo.spGetErrorInfo.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\SqlServerCompiler\Scripts\dbo.spSearchForValue.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Windows\SqlServerCompiler\Scripts\dbo.spSearchForValueInAllDBs.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

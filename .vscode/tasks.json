@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/AV.Client.CLI.Runner.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/AV.Client.CLI.Runner.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Service/WebAPI/AV.Service.WebAPI.Runner/AV.Service.WebAPI.Runner.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

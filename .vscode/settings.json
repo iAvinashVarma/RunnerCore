@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vs": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/node_modules": true,
+        "**/etc": true
+    },
+    "cSpell.words": [
+        "Avinash",
+        "Configurator",
+        "Kalidindi",
+        "Varma",
+        "classlib",
+        "jmrog",
+        "nuget",
+        "runnercore",
+        "webapi"
+    ]
+}

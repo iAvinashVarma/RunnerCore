@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Replacer Directory="C:\Products\Main" Pattern="*.cs" Contains="PrincipalPermission">
+	<Line Match="129" Replace="Kalidindi" />
+	<Line Match="169" Replace="AvinashVarma" />
+	<Line Match="27" Replace="AvinashVarma" />
+	<Line Match="81" Replace="AvinashVarma" />
+</Replacer>

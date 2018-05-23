@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\AV.Middle.Common.Logger\AV.Middle.Common.Logger.csproj" />
+    <ProjectReference Include="..\..\Common\AV.Middle.Common.VersionControl\AV.Middle.Common.VersionControl.csproj" />
+    <ProjectReference Include="..\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+﻿Windows\SqlServerCompiler\Scripts\dbo.spGetErrorInfo.sql
+Windows\SqlServerCompiler\Scripts\dbo.spSearchForValue.sql
+Windows\SqlServerCompiler\Scripts\dbo.spSearchForValueInAllDBs.sql

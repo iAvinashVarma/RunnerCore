@@ -1,0 +1,6 @@
+{
+	"recommendations": [
+		"jmrog.vscode-nuget-package-manager",
+		"ms-vscode.csharp"
+	]
+}
