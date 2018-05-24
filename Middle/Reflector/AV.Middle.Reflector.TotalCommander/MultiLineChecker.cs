@@ -10,9 +10,9 @@ using System.Linq;
 using System.Reflection;
 using System.Xml.Linq;
 
-namespace AV.Middle.Reflector.MultiReplacer
+namespace AV.Middle.Reflector.TotalCommander
 {
-	public class RunProcess : IProcess
+	public class MultiLineChecker : IProcess
 	{
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 		private ReplaceModel replaceModel = null;
@@ -25,7 +25,7 @@ namespace AV.Middle.Reflector.MultiReplacer
 			bool status = false;
 			try
 			{
-				var xDoc = XDocument.Load(EnhanceLog.Set(Hashtable, "Replacer", true));
+				var xDoc = XDocument.Load(EnhanceLog.Set(Hashtable, "SubKeys", true));
 				replaceModel = xDoc.Descendants("Replacer").Select(x => new ReplaceModel
 				{
 					DirectoryPath = x.Attribute("Directory").Value,

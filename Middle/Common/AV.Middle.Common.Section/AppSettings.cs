@@ -12,7 +12,7 @@ namespace AV.Middle.Common.Section
 		{
 			get
 			{
-				return GetRunnerSection().PreRunner.Add;
+				return GetRunnerSection().PreRunner?.Add;
 			}
 		}
 
@@ -20,7 +20,7 @@ namespace AV.Middle.Common.Section
 		{
 			get
 			{
-				return GetRunnerSection().Runner.Add;
+				return GetRunnerSection().Runner?.Add;
 			}
 		}
 
@@ -28,7 +28,7 @@ namespace AV.Middle.Common.Section
 		{
 			get
 			{
-				return GetRunnerSection().PostRunner.Add;
+				return GetRunnerSection().PostRunner?.Add;
 			}
 		}
 

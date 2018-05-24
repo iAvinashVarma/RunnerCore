@@ -13,7 +13,7 @@ using System.Xml;
 
 namespace AV.Middle.Reflector.FileConverter
 {
-	public class ProcessToJson : IProcess
+	public class FileConverter : IProcess
 	{
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 		private Logger log = Logger.Instance;

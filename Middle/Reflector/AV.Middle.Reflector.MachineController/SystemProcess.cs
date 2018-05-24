@@ -1,10 +1,10 @@
-﻿using AV.Middle.Common.System;
+﻿using AV.Middle.Common.Machine.SystemConfiguration;
 using AV.Middle.Reflector.IService;
 using log4net;
 using System.Collections;
 using System.Reflection;
 
-namespace AV.Middle.Reflector.CheckInformation
+namespace AV.Middle.Reflector.MachineController
 {
 	public class SystemProcess : IProcess
 	{

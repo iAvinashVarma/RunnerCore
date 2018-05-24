@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Reflection;
 
-namespace AV.Middle.Reflector.SqlServerCompiler
+namespace AV.Middle.Reflector.DatabaseCompiler.SQLServer
 {
 	public class ScriptCompiler : IProcess
 	{

@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>AV.Middle.Reflector.DatabaseController</AssemblyName>
+    <RootNamespace>AV.Middle.Reflector.DatabaseController</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\AV.Middle.Common.System\AV.Middle.Common.System.csproj" />
+    <ProjectReference Include="..\..\Common\AV.Middle.Common.DAL\AV.Middle.Common.DAL.csproj" />
     <ProjectReference Include="..\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
   </ItemGroup>
 

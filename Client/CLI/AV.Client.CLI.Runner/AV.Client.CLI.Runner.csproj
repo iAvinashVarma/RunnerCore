@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>RunnerCLI</AssemblyName>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>RunnerCore is .NET Core Console / Web / WebAPI with various useful process.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,17 +13,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Factory\AV.Middle.Common.Factory.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Reflection\AV.Middle.Common.Reflection.csproj" />
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Section\AV.Middle.Common.Section.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
-    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.CheckInformation\AV.Middle.Reflector.CheckInformation.csproj" />
-    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.ExecuteCommand\AV.Middle.Reflector.SqlServerCompiler.csproj" />
-    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileConverter\AV.Middle.Reflector.FileConverter.csproj" />
-    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileReader\AV.Middle.Reflector.FileReader.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.DatabaseController\AV.Middle.Reflector.DatabaseController.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileController\AV.Middle.Reflector.FileController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Configure\AV.Middle.Common.Configure.csproj" />
-    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.TfsChecker\AV.Middle.Reflector.TfsChecker.csproj" />
-    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.UpdateRoles\AV.Middle.Reflector.MultiReplacer.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.MachineController\AV.Middle.Reflector.MachineController.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.RegistryController\AV.Middle.Reflector.RegistryController.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.TotalCommander\AV.Middle.Reflector.TotalCommander.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.VersionController\AV.Middle.Reflector.VersionController.csproj" />
   </ItemGroup>
 
   <ItemGroup>

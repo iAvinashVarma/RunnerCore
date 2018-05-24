@@ -1,12 +1,11 @@
 ﻿using AV.Middle.Common.Logger.Validator;
 using AV.Middle.Common.VersionControl;
 using AV.Middle.Reflector.IService;
-using System;
 using System.Collections;
 
-namespace AV.Middle.Reflector.TfsChecker
+namespace AV.Middle.Reflector.VersionController.TFS
 {
-	public class ChangesetFiles : IProcess
+	public class ChangesetChecker : IProcess
 	{
 		public Hashtable Hashtable { get; set; }
 

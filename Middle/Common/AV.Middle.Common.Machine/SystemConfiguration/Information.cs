@@ -3,7 +3,7 @@ using System;
 using System.Management;
 using System.Text;
 
-namespace AV.Middle.Common.System
+namespace AV.Middle.Common.Machine.SystemConfiguration
 {
 	public class Information
 	{

@@ -1,11 +1,10 @@
 ﻿using AV.Middle.Common.Model;
 using AV.Middle.Common.Terminal;
-using System;
 
 namespace AV.Middle.Common.VersionControl
 {
-    public class TfsCmd : CommandService
-    {
+	public class TfsCmd : CommandService
+	{
 		private string Arguments;
 
 		private string WorkingDirectory;

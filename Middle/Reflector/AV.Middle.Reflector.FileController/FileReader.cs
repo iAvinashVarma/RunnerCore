@@ -8,15 +8,14 @@ using System.Collections;
 using System.IO;
 using System.Reflection;
 
-namespace AV.Middle.Reflector.FileReader
+namespace AV.Middle.Reflector.FileController
 {
-	public class OneLiner : IProcess
+	public class FileReader : IProcess
 	{
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 		private Logger log = Logger.Instance;
 		public Hashtable Hashtable { get; set; }
 		private FileModel fileModel = null;
-
 
 		public void Start()
 		{
@@ -36,7 +35,7 @@ namespace AV.Middle.Reflector.FileReader
 				fileModel = new FileModel(fileFullPath);
 				status = File.Exists(fileFullPath);
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
 				logger.Error(ex);
 			}

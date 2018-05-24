@@ -28,6 +28,5 @@ namespace AV.Middle.Common.Model
 		{
 			get { return Path.GetExtension(FileFullPath); }
 		}
-
 	}
 }

@@ -1,16 +1,32 @@
 {
-   "version": "0.2.0",
-   "configurations": [
+    "version": "0.2.0",
+    "configurations": [{
+            "name": "RunnerCLI UpdateRegistry",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=UpdateRegistry",
+                "/SubKeys=SOFTWARE\\ProgLan\\Product,SOFTWARE\\Wow6432Node\\ProgLan\\Product",
+                "/Key=LogToDirectory",
+                "/Value=C:\\Avi\\Logs"
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
         {
             "name": "RunnerCLI ToJson",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
-            "args": [ 
+            "args": [
                 "/Process=ToJson",
                 "/FilePath=C:/AVI/Practice/ProgLan/Main/VDrive/Client/Console/RunnerCore/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/Windows/UpdateRoles/India.xml"
-             ],
+            ],
             "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
             "console": "internalConsole",
             "stopAtEntry": false,

@@ -1,8 +1,7 @@
 {
   "profiles": {
     "AV.Client.CLI.Runner": {
-      "commandName": "Project",
-      "commandLineArgs": "/Process=OneLiner /FilePath=C:\\AVI\\Professional\\Work\\02.Defects\\36.490454\\QA105.XML"
+      "commandName": "Project"
     }
   }
 }
