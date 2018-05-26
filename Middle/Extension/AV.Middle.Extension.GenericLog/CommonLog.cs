@@ -4,13 +4,13 @@ using System.Collections;
 using System.IO;
 using System.Reflection;
 
-namespace AV.Middle.Common.Logger.Validator
+namespace AV.Middle.Extension.GenericLog
 {
-	public static class EnhanceLog
+	public static class CommonLog
 	{
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-		public static string Set(Hashtable Hashtable, string key, bool isPath = false, string defaultValue = "")
+		public static string Validate(this Hashtable Hashtable, string key, bool isPath = false, string defaultValue = "")
 		{
 			var hash = Hashtable[key];
 			var value = string.Empty;

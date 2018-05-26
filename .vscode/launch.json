@@ -18,6 +18,56 @@
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
+            "name": "RunnerCLI MultiReplacer",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=MultiReplacer",
+                "/FilePath=/Replacer=Windows\\MultiReplacer\\Replacer.xml"
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "RunnerCLI SQLServerCompiler",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=SQLServerCompiler",
+                "/FilePath=Windows/SQLServerCompiler/Sample.lst",
+                "/DataSource=localhost",
+                "/InitialCatalog=Sample",
+                "/IntegratedSecurity=1"
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "RunnerCLI GetChangeset",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=GetChangeset",
+                "/WorkingDirectory=C:\\AVI\\Practice\\ProgLan\\Main",
+                "/Changeset=100",
+                "/Section=Items"
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
             "name": "RunnerCLI ToJson",
             "type": "coreclr",
             "request": "launch",
@@ -25,7 +75,36 @@
             "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
             "args": [
                 "/Process=ToJson",
-                "/FilePath=C:/AVI/Practice/ProgLan/Main/VDrive/Client/Console/RunnerCore/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/Windows/UpdateRoles/India.xml"
+                "/FilePath=C:\\Temp\\Avi\\Filter.xml",
+                "/WebLog="
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "RunnerCLI StrategyPattern",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=StrategyPattern"
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "RunnerCLI TemplatePattern",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=TemplatePattern"
             ],
             "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
             "console": "internalConsole",
@@ -62,12 +141,6 @@
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
             }
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processId": "${command:pickProcess}"
         }
     ]
 }

@@ -9,7 +9,7 @@ namespace AV.Middle.Extension.Generic
 	/// <summary>
 	/// Represents Object Extension Methods.
 	/// </summary>
-	public static class TGeneric
+	public static class Common
 	{
 		/// <summary>
 		///  Check if object is null.

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AV.Middle.Common.Model
+﻿namespace AV.Middle.Common.Model
 {
-    public class TeamFoundationModel
-    {
+	public class TeamFoundationModel
+	{
 		private string workingDirectory;
 
 		public string WorkingDirectory
@@ -30,5 +26,12 @@ namespace AV.Middle.Common.Model
 			set { shelveset = value; }
 		}
 
+		private string section;
+
+		public string Section
+		{
+			get { return section; }
+			set { section = value; }
+		}
 	}
 }

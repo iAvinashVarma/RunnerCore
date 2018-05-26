@@ -34,7 +34,7 @@ namespace AV.Middle.Common.Section
 
 		private RunnerSection GetRunnerSection()
 		{
-			var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+			var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(path: "appsettings.json", optional: false, reloadOnChange: true);
 			var config = builder.Build();
 			var runner = new RunnerSection();
 			config.GetSection("runnerSection").Bind(runner);

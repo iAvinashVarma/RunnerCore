@@ -6,7 +6,6 @@ using log4net;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 
@@ -26,7 +25,7 @@ namespace AV.Middle.Reflector.RegistryController
 			foreach (var reg in registryModels)
 			{
 				var registryValue = registry.GetValue(reg);
-				if(string.IsNullOrEmpty(registryValue))
+				if (string.IsNullOrEmpty(registryValue))
 				{
 					logger.Info($"Unable to get \"{reg.SubKey}\\{reg.Key}\".");
 					continue;

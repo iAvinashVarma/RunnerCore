@@ -17,7 +17,7 @@ namespace AV.Middle.Common.VersionControl
 
 		public override ExecuteModel ExecuteCommand()
 		{
-			return base.ExecuteCommand("tf", Arguments);
+			return base.ExecuteCommand("tf", Arguments, WorkingDirectory);
 		}
 	}
 }

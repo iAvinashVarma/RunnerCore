@@ -1,6 +1,6 @@
 ﻿using AV.Middle.Common.Logger.Observer;
-using AV.Middle.Common.Logger.Validator;
 using AV.Middle.Common.Model;
+using AV.Middle.Extension.GenericLog;
 using AV.Middle.Reflector.IService;
 using log4net;
 using Newtonsoft.Json;
@@ -39,7 +39,7 @@ namespace AV.Middle.Reflector.FileConverter
 			bool status = false;
 			try
 			{
-				var fileFullPath = Path.GetFullPath(EnhanceLog.Set(Hashtable, "FilePath", true));
+				var fileFullPath = Path.GetFullPath(Hashtable.Validate("FilePath", true));
 				fileModel = new FileModel(fileFullPath);
 				//if (Path.GetExtension(fileModel.FileFullPath).Equals(".XML", StringComparison.OrdinalIgnoreCase))
 				{

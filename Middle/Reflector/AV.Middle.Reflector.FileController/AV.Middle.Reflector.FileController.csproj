@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Common\AV.Middle.Common.Logger\AV.Middle.Common.Logger.csproj" />
     <ProjectReference Include="..\..\Common\AV.Middle.Common.Model\AV.Middle.Common.Model.csproj" />
+    <ProjectReference Include="..\..\Extension\AV.Middle.Extension.GenericLog\AV.Middle.Extension.GenericLog.csproj" />
     <ProjectReference Include="..\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
   </ItemGroup>
 

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AV.Middle.Common.Model
+﻿namespace AV.Middle.Common.Model
 {
-    public class RegistryModel
-    {
+	public class RegistryModel
+	{
 		private string subKey;
 
 		public string SubKey
@@ -29,6 +25,5 @@ namespace AV.Middle.Common.Model
 			get { return vValue; }
 			set { vValue = value; }
 		}
-
 	}
 }

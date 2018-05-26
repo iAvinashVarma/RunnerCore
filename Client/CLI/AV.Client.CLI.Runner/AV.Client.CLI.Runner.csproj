@@ -16,6 +16,8 @@
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Reflection\AV.Middle.Common.Reflection.csproj" />
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Section\AV.Middle.Common.Section.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.DuckGame\AV.Middle.Miscellaneous.DuckGame.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.Game\AV.Middle.Miscellaneous.Game.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.DatabaseController\AV.Middle.Reflector.DatabaseController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileController\AV.Middle.Reflector.FileController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />

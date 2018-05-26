@@ -1,7 +1,8 @@
 {
   "profiles": {
     "AV.Client.CLI.Runner": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "/Process=GetChangeset /WorkingDirectory=C:\\AVI\\Practice\\ProgLan\\Main /Changeset=9 /Section=Items"
     }
   }
 }
