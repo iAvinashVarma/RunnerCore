@@ -2,7 +2,7 @@
   "profiles": {
     "AV.Client.CLI.Runner": {
       "commandName": "Project",
-      "commandLineArgs": "/Process=GetChangeset /WorkingDirectory=C:\\AVI\\Practice\\ProgLan\\Main /Changeset=9 /Section=Items"
+      "commandLineArgs": "/Process=PrototypePattern"
     }
   }
 }

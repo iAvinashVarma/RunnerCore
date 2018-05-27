@@ -87,50 +87,13 @@ namespace AV.Client.CLI.Runner
 				var currentProcess = AssemblyFactory.LoadAssembly<T>(runner.Type);
 				if (currentProcess != null)
 				{
-					if (typeof(T) == typeof(IPreProcess))
-					{
-						PreRun((IPreProcess)currentProcess, hashtable);
-					}
-					else if (typeof(T) == typeof(IProcess))
-					{
-						Run((IProcess)currentProcess, hashtable);
-					}
-					else if (typeof(T) == typeof(IPostProcess))
-					{
-						PostRun((IPostProcess)currentProcess, hashtable);
-					}
+					var runProcess = new RunProcess();
+					runProcess.Run<T>(currentProcess, hashtable);
 				}
 				else
 				{
 					logger.WarnFormat($"Issue while running {typeof(T).FullName}.");
 				}
-			}
-		}
-
-		private void PreRun(IPreProcess preProcess, Hashtable hashtable)
-		{
-			preProcess.Hashtable = hashtable;
-			if (preProcess.PreValidate())
-			{
-				preProcess.PreStart();
-			}
-		}
-
-		private void Run(IProcess process, Hashtable hashtable)
-		{
-			process.Hashtable = hashtable;
-			if (process.Validate())
-			{
-				process.Start();
-			}
-		}
-
-		private void PostRun(IPostProcess postProcess, Hashtable hashtable)
-		{
-			postProcess.Hashtable = hashtable;
-			if (postProcess.PostValidate())
-			{
-				postProcess.PostStart();
 			}
 		}
 
