@@ -126,6 +126,20 @@
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
+            "name": "RunnerCLI AdapterPattern",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner/bin/Debug/netcoreapp2.0/RunnerCLI.dll",
+            "args": [
+                "/Process=AdapterPattern"
+            ],
+            "cwd": "${workspaceFolder}/Client/CLI/AV.Client.CLI.Runner",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
             "name": "RunnerWebAPI",
             "type": "coreclr",
             "request": "launch",
