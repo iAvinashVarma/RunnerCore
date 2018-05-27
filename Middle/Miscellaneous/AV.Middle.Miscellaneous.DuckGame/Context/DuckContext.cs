@@ -1,17 +1,14 @@
 ﻿using AV.Middle.Miscellaneous.DuckGame.Interface;
 using log4net;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace AV.Middle.Miscellaneous.DuckGame.Context
 {
-    public class DuckContext
-    {
+	public class DuckContext
+	{
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-		IFlyBehavior flyer;
-		IQuackBehavior quacker;
+		private IFlyBehavior flyer;
+		private IQuackBehavior quacker;
 
 		public virtual void SetFly(IFlyBehavior flyBehavior)
 		{
@@ -37,5 +34,5 @@ namespace AV.Middle.Miscellaneous.DuckGame.Context
 		{
 			logger.Info("Swim..");
 		}
-    }
+	}
 }

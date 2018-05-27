@@ -18,6 +18,10 @@
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
     <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.DuckGame\AV.Middle.Miscellaneous.DuckGame.csproj" />
     <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.Game\AV.Middle.Miscellaneous.Game.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.Geometry\AV.Middle.Miscellaneous.Geometry.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.Restaurant\AV.Middle.Miscellaneous.Restaurant.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.ShapePrototype\AV.Middle.Miscellaneous.ShapePrototype.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Miscellaneous\AV.Middle.Miscellaneous.Shape\AV.Middle.Miscellaneous.Shape.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.DatabaseController\AV.Middle.Reflector.DatabaseController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileController\AV.Middle.Reflector.FileController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />

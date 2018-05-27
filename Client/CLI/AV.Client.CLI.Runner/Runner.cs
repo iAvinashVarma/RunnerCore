@@ -1,6 +1,7 @@
 ﻿using AV.Middle.Common.Reflection;
 using AV.Middle.Common.Section;
 using AV.Middle.Extension.Generic;
+using AV.Middle.Extension.GenericLog;
 using AV.Middle.Reflector.IService;
 using log4net;
 using System;
@@ -53,7 +54,7 @@ namespace AV.Client.CLI.Runner
 			}
 			else if (hashtable.ContainsKey("Process"))
 			{
-				var process = LogHashtable(hashtable, "Process");
+				var process = hashtable.Validate("Process");
 				if (!string.IsNullOrEmpty(process))
 				{
 					if (appSettings.PreRunnerList != null)
@@ -138,20 +139,6 @@ namespace AV.Client.CLI.Runner
 			Console.WriteLine($"{typeof(Program).Assembly.GetName().Name} /Process=UpdateRoles /Directory=C:\\Products\\Tags\\10.6.0 /RolesPath=Roles.XML /Match=Activation /Replace=AppFunctionId /Pattern=*.cs /Contains=PrincipalPermission");
 			Console.WriteLine($"{typeof(Program).Assembly.GetName().Name} /Process=ExecuteCommand /FilePath=C:\\AVI\\List.lst /DataSource=localhost /InitialCatalog=Sample /IntegratedSecurity=1{Environment.NewLine}" +
 				$"{typeof(Program).Assembly.GetName().Name} /FilePath=C:\\AVI\\List.lst /DataSource=localhost /InitialCatalog=Sample /IntegratedSecurity=0 /UserId=[userId] /Password=[password]");
-		}
-
-		private string LogHashtable(Hashtable Hashtable, string key, bool isPath = false)
-		{
-			var value = string.Empty;
-			if (Hashtable.ContainsKey(key) && Hashtable[key] != null)
-			{
-				var hash = Hashtable[key];
-				value = isPath ? Path.GetFullPath(Hashtable[key].ToString()) : Hashtable[key].ToString();
-				logger.InfoFormat("Given {0}: {1}", key, value);
-			}
-			else
-				throw new Exception(string.Format("Invalid {0} information.", key));
-			return value;
 		}
 	}
 }
