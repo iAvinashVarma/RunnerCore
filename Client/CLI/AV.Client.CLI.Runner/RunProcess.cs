@@ -26,7 +26,7 @@ namespace AV.Client.CLI.Runner
 
 		private void PreRun(IPreProcess preProcess, Hashtable hashtable)
 		{
-			if (hashtable != null) return;
+			if (hashtable == null) return;
 			preProcess.Hashtable = hashtable;
 			if (preProcess.PreValidate())
 			{
@@ -36,7 +36,7 @@ namespace AV.Client.CLI.Runner
 
 		private void Run(IProcess process, Hashtable hashtable)
 		{
-			if (hashtable != null) return;
+			if (hashtable == null) return;
 			process.Hashtable = hashtable;
 			if (process.Validate())
 			{
@@ -46,7 +46,7 @@ namespace AV.Client.CLI.Runner
 
 		private void PostRun(IPostProcess postProcess, Hashtable hashtable)
 		{
-			if (hashtable != null) return;
+			if (hashtable == null) return;
 			postProcess.Hashtable = hashtable;
 			if (postProcess.PostValidate())
 			{
