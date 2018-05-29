@@ -1,8 +1,8 @@
-﻿using AV.Middle.Pattern.FilterCriteria.Concrete;
+﻿using AV.Middle.Extension.Generic;
+using AV.Middle.Pattern.FilterCriteria.Concrete;
 using AV.Middle.Pattern.FilterCriteria.Model;
 using AV.Middle.Reflector.IService;
 using log4net;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
@@ -32,15 +32,12 @@ namespace AV.Middle.Pattern.FilterCriteria
 			var male = new CriteriaMale();
 			var female = new CriteriaFemale();
 			var single = new CriteriaSingle();
-			var and = new AndCriteria(single, male);
-			var or = new OrCriteria(single, female);
 
-			logger.Info($"Males: {male}.");
-			logger.Info($"Females: {female}.");
-			logger.Info($"Singles: {single}.");
-			logger.Info($"Single Males: {and}.");
-			logger.Info($"Single or Females: {or}.");
-			or.ToString();
+			male.MeetCriteria(persons).DoAction(x => logger.Info("Males: ")).ForEach(m => logger.Info(m));
+			female.MeetCriteria(persons).DoAction(x => logger.Info("Females: ")).ForEach(f => logger.Info(f));
+			single.MeetCriteria(persons).DoAction(x => logger.Info("Single: ")).ForEach(s => logger.Info(s));
+			(new AndCriteria(single, male)).MeetCriteria(persons).DoAction(x => logger.Info("And: ")).ForEach(a => logger.Info(a));
+			(new OrCriteria(single, female)).MeetCriteria(persons).DoAction(x => logger.Info("Or: ")).ForEach(o => logger.Info(o));
 		}
 
 		public bool Validate()

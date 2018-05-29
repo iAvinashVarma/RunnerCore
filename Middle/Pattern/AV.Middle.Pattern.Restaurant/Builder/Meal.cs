@@ -3,14 +3,14 @@ using log4net;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace AV.Middle.Pattern.Restaurant.Builder
 {
-    public class Meal
-    {
-		List<IItem> items = new List<IItem>();
+	public class Meal
+	{
+		private List<IItem> items = new List<IItem>();
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+
 		public void AddItem(IItem item)
 		{
 			items.Add(item);
@@ -33,5 +33,5 @@ namespace AV.Middle.Pattern.Restaurant.Builder
 				logger.Info($"Item: {item.Name()} | Packing: {item.Package().Type()} | Price: {item.Price()}{Environment.NewLine}");
 			}
 		}
-    }
+	}
 }

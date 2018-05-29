@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace AV.Middle.Pattern.Company.Model
 {
-    public class Employee
-    {
+	public class Employee
+	{
 		private string _name;
 		private string _department;
 		private double _salary;

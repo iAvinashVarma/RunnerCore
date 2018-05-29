@@ -1,14 +1,11 @@
 ﻿using AV.Middle.Pattern.ShapePrototype.Abstract;
 using AV.Middle.Pattern.ShapePrototype.Concrete;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.ShapePrototype
 {
-    public class ShapeCache
-    {
+	public class ShapeCache
+	{
 		private static Dictionary<string, Shape> shapeMap = new Dictionary<string, Shape>();
 
 		public static Shape GetShape(string shapeId)
@@ -37,5 +34,5 @@ namespace AV.Middle.Pattern.ShapePrototype
 			};
 			shapeMap.Add(rectangle.Id, rectangle);
 		}
-    }
+	}
 }

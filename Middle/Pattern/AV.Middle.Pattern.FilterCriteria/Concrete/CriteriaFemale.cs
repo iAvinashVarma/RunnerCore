@@ -2,12 +2,11 @@
 using AV.Middle.Pattern.FilterCriteria.Model;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.FilterCriteria.Concrete
 {
-    public class CriteriaFemale : ICriteria
-    {
+	public class CriteriaFemale : ICriteria
+	{
 		public List<Person> MeetCriteria(List<Person> persons)
 		{
 			var females = new List<Person>();

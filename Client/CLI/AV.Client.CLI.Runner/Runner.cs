@@ -6,7 +6,6 @@ using AV.Middle.Reflector.IService;
 using log4net;
 using System;
 using System.Collections;
-using System.IO;
 using System.Linq;
 using System.Reflection;
 
@@ -87,8 +86,7 @@ namespace AV.Client.CLI.Runner
 				var currentProcess = AssemblyFactory.LoadAssembly<T>(runner.Type);
 				if (currentProcess != null)
 				{
-					var runProcess = new RunProcess();
-					runProcess.Run<T>(currentProcess, hashtable);
+					new RunProcess().Run<T>(currentProcess, hashtable);
 				}
 				else
 				{

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AV.Middle.Pattern.Geometry.Interface
+﻿namespace AV.Middle.Pattern.Geometry.Interface
 {
-    public interface IColor
-    {
+	public interface IColor
+	{
 		void Fill();
-    }
+	}
 }

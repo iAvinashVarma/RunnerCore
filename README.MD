@@ -1,6 +1,6 @@
 # RunnerCore
 
-RunnerCore is .NET Core Console / Web / WebAPI with various useful process.
+RunnerCore is .NET Core Console / Web / WebAPI project with various real time scenarios and useful process.
 
 ---
 

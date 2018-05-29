@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
     <ProjectReference Include="..\..\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
   </ItemGroup>
 

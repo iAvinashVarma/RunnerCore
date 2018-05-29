@@ -1,22 +1,20 @@
 ﻿using AV.Middle.Pattern.MediaPlayer.Concrete;
 using AV.Middle.Pattern.MediaPlayer.Interface;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.MediaPlayer.Adapter
 {
 	public class MediaAdapter : IPlayer
 	{
-		IAdvancedPlayer advancedPlayer;
+		private IAdvancedPlayer advancedPlayer;
 
 		public MediaAdapter(string audioType)
 		{
-			if(audioType.Equals("vlc", StringComparison.OrdinalIgnoreCase))
+			if (audioType.Equals("vlc", StringComparison.OrdinalIgnoreCase))
 			{
 				advancedPlayer = new VLCPlayer();
 			}
-			else if(audioType.Equals("mp4", StringComparison.OrdinalIgnoreCase))
+			else if (audioType.Equals("mp4", StringComparison.OrdinalIgnoreCase))
 			{
 				advancedPlayer = new MP4Player();
 			}

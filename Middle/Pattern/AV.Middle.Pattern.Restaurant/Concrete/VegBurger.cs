@@ -1,7 +1,4 @@
 ﻿using AV.Middle.Pattern.Restaurant.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.Restaurant.Concrete
 {

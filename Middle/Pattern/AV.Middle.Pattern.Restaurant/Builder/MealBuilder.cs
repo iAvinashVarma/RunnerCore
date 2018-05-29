@@ -1,12 +1,9 @@
 ﻿using AV.Middle.Pattern.Restaurant.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.Restaurant.Builder
 {
-    public class MealBuilder
-    {
+	public class MealBuilder
+	{
 		public Meal PrepareVegMeal()
 		{
 			var meal = new Meal();
@@ -22,5 +19,5 @@ namespace AV.Middle.Pattern.Restaurant.Builder
 			meal.AddItem(new ChickenBurger());
 			return meal;
 		}
-    }
+	}
 }

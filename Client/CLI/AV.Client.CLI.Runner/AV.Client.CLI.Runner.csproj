@@ -17,11 +17,17 @@
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Section\AV.Middle.Common.Section.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.GenericLog\AV.Middle.Extension.GenericLog.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Company\AV.Middle.Pattern.Company.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.DrawShape\AV.Middle.Pattern.DrawShape.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.DuckGame\AV.Middle.Pattern.DuckGame.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.FilterCriteria\AV.Middle.Pattern.FilterCriteria.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.FlyweightPattern\AV.Middle.Pattern.FlyweightPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Game\AV.Middle.Pattern.Game.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Geometry\AV.Middle.Pattern.Geometry.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ImageViewer\AV.Middle.Pattern.ImageViewer.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.MediaPlayer\AV.Middle.Pattern.MediaPlayer.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Restaurant\AV.Middle.Pattern.Restaurant.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ShapeMaker\AV.Middle.Pattern.ShapeMaker.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ShapePrototype\AV.Middle.Pattern.ShapePrototype.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Shape\AV.Middle.Pattern.Shape.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.DatabaseController\AV.Middle.Reflector.DatabaseController.csproj" />

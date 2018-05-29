@@ -1,8 +1,6 @@
 ﻿using AV.Middle.Pattern.FilterCriteria.Interface;
 using AV.Middle.Pattern.FilterCriteria.Model;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.FilterCriteria.Concrete
 {

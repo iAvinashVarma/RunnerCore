@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AV.Middle.Pattern.Restaurant.Interface
+﻿namespace AV.Middle.Pattern.Restaurant.Interface
 {
-    public interface IPackage
-    {
+	public interface IPackage
+	{
 		string Type();
-    }
+	}
 }

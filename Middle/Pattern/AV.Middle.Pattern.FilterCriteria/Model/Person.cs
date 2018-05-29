@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AV.Middle.Pattern.FilterCriteria.Model
+﻿namespace AV.Middle.Pattern.FilterCriteria.Model
 {
-    public class Person
-    {
+	public class Person
+	{
 		private string name;
 
 		public string Name
@@ -34,6 +30,5 @@ namespace AV.Middle.Pattern.FilterCriteria.Model
 		{
 			return $"Person: [ Name: {name}, Gender: {gender}, Marital Status: {maritalStatus} ]";
 		}
-
 	}
 }

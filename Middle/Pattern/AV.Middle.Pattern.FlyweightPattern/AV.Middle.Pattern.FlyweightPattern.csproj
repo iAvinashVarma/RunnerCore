@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+</Project>

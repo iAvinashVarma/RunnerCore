@@ -1,7 +1,6 @@
 ﻿using AV.Middle.Pattern.Company.Model;
 using AV.Middle.Reflector.IService;
 using log4net;
-using System;
 using System.Collections;
 using System.Reflection;
 
@@ -21,21 +20,29 @@ namespace AV.Middle.Pattern.Company
 			var ceo = new Employee("Avinash", "CEO", 30000);
 			var headSales = new Employee("Robert", "Head Sales", 20000);
 			var headMarketing = new Employee("Michel", "Head Marketing", 20000);
-			var clerk1 = new Employee("Laura", "Marketing", 10000);
-			var clerk2 = new Employee("Bob", "Marketing", 10000);
-			var salesExecutive1 = new Employee("Richard", "Sales", 10000);
-			var salesExecutive2 = new Employee("Rob", "Sales", 10000);
+			var clerkOne = new Employee("Laura", "Marketing", 10000);
+			var clerkTwo = new Employee("Bob", "Marketing", 10000);
+			var salesExecutiveOne = new Employee("Richard", "Sales", 10000);
+			var salesExecutiveTwo = new Employee("Rob", "Sales", 10000);
 
 			ceo.Add(headSales);
 			ceo.Add(headMarketing);
 
-			headSales.Add(salesExecutive1);
-			headSales.Add(salesExecutive2);
+			headSales.Add(salesExecutiveOne);
+			headSales.Add(salesExecutiveTwo);
 
-			headMarketing.Add(clerk1);
-			headMarketing.Add(clerk2);
+			headMarketing.Add(clerkOne);
+			headMarketing.Add(clerkTwo);
 
 			logger.Info($"CEO: {ceo}.");
+			ceo.Employees.ForEach(x =>
+			{
+				logger.Info(x);
+				x.Employees.ForEach(e =>
+				{
+					logger.Info(e);
+				});
+			});
 		}
 
 		public bool Validate()

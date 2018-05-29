@@ -2,9 +2,7 @@
 using AV.Middle.Pattern.MediaPlayer.Interface;
 using log4net;
 using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace AV.Middle.Pattern.MediaPlayer.Concrete
 {
@@ -12,16 +10,16 @@ namespace AV.Middle.Pattern.MediaPlayer.Concrete
 	{
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-		MediaAdapter mediaAdapter;
+		private MediaAdapter mediaAdapter;
 
 		public void Play(string audioType, string fileName)
 		{
 			// In built support to play MP3 music files.
-			if(audioType.Equals("mp3", StringComparison.OrdinalIgnoreCase))
+			if (audioType.Equals("mp3", StringComparison.OrdinalIgnoreCase))
 			{
 				logger.Info($"Playing {audioType} file. FileName: {fileName}.");
 			}
-			else if(audioType.Equals("vlc", StringComparison.OrdinalIgnoreCase) || audioType.Equals("mp4", StringComparison.OrdinalIgnoreCase))
+			else if (audioType.Equals("vlc", StringComparison.OrdinalIgnoreCase) || audioType.Equals("mp4", StringComparison.OrdinalIgnoreCase))
 			{
 				logger.Info($"Playing {audioType} file. FileName: {fileName}.");
 				mediaAdapter = new MediaAdapter(audioType);

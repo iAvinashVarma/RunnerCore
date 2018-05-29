@@ -1,7 +1,6 @@
 ﻿using AV.Middle.Pattern.MediaPlayer.Concrete;
 using AV.Middle.Reflector.IService;
 using log4net;
-using System;
 using System.Collections;
 using System.Reflection;
 

@@ -1,12 +1,9 @@
 ﻿using AV.Middle.Pattern.DrawShape.Interface;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AV.Middle.Pattern.DrawShape.Abstract
 {
-    public abstract class Shape
-    {
+	public abstract class Shape
+	{
 		protected IDrawAPI drawAPI;
 
 		protected Shape(IDrawAPI draw)
@@ -15,5 +12,5 @@ namespace AV.Middle.Pattern.DrawShape.Abstract
 		}
 
 		public abstract void Draw();
-    }
+	}
 }
