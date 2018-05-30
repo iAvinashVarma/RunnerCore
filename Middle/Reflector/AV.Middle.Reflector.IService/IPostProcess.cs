@@ -2,15 +2,8 @@
 
 namespace AV.Middle.Reflector.IService
 {
-	public interface IPostProcess
+	public interface IPostProcess : IProcess
 	{
-		Hashtable Hashtable
-		{
-			get; set;
-		}
 
-		bool PostValidate();
-
-		void PostStart();
 	}
 }

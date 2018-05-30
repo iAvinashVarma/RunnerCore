@@ -2,15 +2,8 @@
 
 namespace AV.Middle.Reflector.IService
 {
-	public interface IPreProcess
+	public interface IPreProcess : IProcess
 	{
-		Hashtable Hashtable
-		{
-			get; set;
-		}
 
-		bool PreValidate();
-
-		void PreStart();
 	}
 }

@@ -2,7 +2,7 @@
   "profiles": {
     "AV.Client.CLI.Runner": {
       "commandName": "Project",
-      "commandLineArgs": "/Process=ProxyPattern"
+      "commandLineArgs": "/Process=InterpreterPattern"
     }
   }
 }
