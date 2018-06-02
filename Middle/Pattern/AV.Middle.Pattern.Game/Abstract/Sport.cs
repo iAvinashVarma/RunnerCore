@@ -1,6 +1,15 @@
 ﻿namespace AV.Middle.Pattern.Game.Abstract
 {
-	public abstract class Sport
+	public interface ISport
+	{
+		void Initialize();
+
+		void StartPlay();
+
+		void EndPlay();
+	}
+
+	public abstract class Sport : ISport
 	{
 		public abstract void Initialize();
 

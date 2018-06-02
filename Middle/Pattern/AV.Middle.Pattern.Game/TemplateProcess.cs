@@ -1,4 +1,5 @@
-﻿using AV.Middle.Pattern.Game.Concrete;
+﻿using AV.Middle.Pattern.Game.Abstract;
+using AV.Middle.Pattern.Game.Concrete;
 using AV.Middle.Reflector.IService;
 using log4net;
 using System.Collections;

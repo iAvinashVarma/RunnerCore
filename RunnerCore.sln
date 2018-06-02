@@ -99,9 +99,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AV.Middle.Pattern.ImageView
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AV.Middle.Pattern.MultiLogger", "Middle\Pattern\AV.Middle.Pattern.MultiLogger\AV.Middle.Pattern.MultiLogger.csproj", "{309C1846-5BE3-44F1-9EBE-6D3AA3360479}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AV.Middle.Pattern.StockBroker", "Middle\Pattern\AV.Middle.Pattern.StockBroker\AV.Middle.Pattern.StockBroker.csproj", "{0A01CDB0-1387-405A-99F0-8CB68A145697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AV.Middle.Pattern.StockBroker", "Middle\Pattern\AV.Middle.Pattern.StockBroker\AV.Middle.Pattern.StockBroker.csproj", "{0A01CDB0-1387-405A-99F0-8CB68A145697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AV.Middle.Pattern.ExpressionInterpreter", "Middle\Pattern\AV.Middle.Pattern.ExpressionInterpreter\AV.Middle.Pattern.ExpressionInterpreter.csproj", "{7696F16A-EA74-464A-99AA-A921F30AB689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AV.Middle.Pattern.ExpressionInterpreter", "Middle\Pattern\AV.Middle.Pattern.ExpressionInterpreter\AV.Middle.Pattern.ExpressionInterpreter.csproj", "{7696F16A-EA74-464A-99AA-A921F30AB689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AV.Middle.Pattern.IteratorPattern", "Middle\Pattern\AV.Middle.Pattern.IteratorPattern\AV.Middle.Pattern.IteratorPattern.csproj", "{97FBBDF4-1997-4CCD-9421-02B0B5A4BC17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspect", "Aspect", "{E62DC7D2-CF73-46A7-B788-E1BD22A08017}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AV.Middle.Aspect.OrientedProcess", "Middle\Aspect\AV.Middle.Aspect.OrientedProcess\AV.Middle.Aspect.OrientedProcess.csproj", "{BE628F65-743B-48DE-A4E6-591DAD60D8C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -269,6 +275,14 @@ Global
 		{7696F16A-EA74-464A-99AA-A921F30AB689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7696F16A-EA74-464A-99AA-A921F30AB689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7696F16A-EA74-464A-99AA-A921F30AB689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FBBDF4-1997-4CCD-9421-02B0B5A4BC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FBBDF4-1997-4CCD-9421-02B0B5A4BC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FBBDF4-1997-4CCD-9421-02B0B5A4BC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FBBDF4-1997-4CCD-9421-02B0B5A4BC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE628F65-743B-48DE-A4E6-591DAD60D8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE628F65-743B-48DE-A4E6-591DAD60D8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE628F65-743B-48DE-A4E6-591DAD60D8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE628F65-743B-48DE-A4E6-591DAD60D8C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -321,6 +335,9 @@ Global
 		{309C1846-5BE3-44F1-9EBE-6D3AA3360479} = {BB49D286-50ED-451B-903F-6DCB5BECC0E9}
 		{0A01CDB0-1387-405A-99F0-8CB68A145697} = {BB49D286-50ED-451B-903F-6DCB5BECC0E9}
 		{7696F16A-EA74-464A-99AA-A921F30AB689} = {BB49D286-50ED-451B-903F-6DCB5BECC0E9}
+		{97FBBDF4-1997-4CCD-9421-02B0B5A4BC17} = {BB49D286-50ED-451B-903F-6DCB5BECC0E9}
+		{E62DC7D2-CF73-46A7-B788-E1BD22A08017} = {3483286E-FC33-4E83-8B67-A36C500AF97F}
+		{BE628F65-743B-48DE-A4E6-591DAD60D8C1} = {E62DC7D2-CF73-46A7-B788-E1BD22A08017}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35E3F7CE-B32D-42E1-ABAE-DBF71E7D1C6D}
