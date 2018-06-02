@@ -14,13 +14,13 @@ namespace AV.Middle.Aspect.OrientedProcess.Factory
     {
 		private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-		public ICalculator<T> Create<T>(CreateType createType = CreateType.DispatchProxy)
+		public ICalculator<T> Create<T>(CreateType createType = CreateType.DynamicProxy)
 		{
 			ICalculator<T> calculator = null;
 			switch (createType)
 			{
-				case CreateType.DispatchProxy:
-					calculator = new LoggerAdvice<ICalculator<T>>().Create(new Calculator<T>(),
+				case CreateType.DynamicProxy:
+					calculator = new DynamicProxy<ICalculator<T>>().Create(new Calculator<T>(),
 						s => logger.Info($"{s}"),
 						e => logger.Error($"{e}"),
 						o => o?.ToString(),
