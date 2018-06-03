@@ -4,8 +4,8 @@ using System.Text;
 
 namespace AV.Middle.Reflector.IService
 {
-    public interface IDecorate
+    public interface IDecorate<T>
     {
-		void Run();
+		void Run(T entity);
     }
 }

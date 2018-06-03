@@ -86,7 +86,7 @@ namespace AV.Client.CLI.Runner
 				var currentProcess = AssemblyFactory.LoadAssembly<T>(runner.Type);
 				if (currentProcess != null)
 				{
-					new ProcessDecorator((IProcess)currentProcess, hashtable).Run();
+					new ProcessDecorator<IProcess>(hashtable).Run((IProcess)currentProcess);
 				}
 				else
 				{

@@ -18,6 +18,7 @@
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Section\AV.Middle.Common.Section.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.GenericLog\AV.Middle.Extension.GenericLog.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ChatRoom\AV.Middle.Pattern.ChatRoom.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Company\AV.Middle.Pattern.Company.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.DecorateShape\AV.Middle.Pattern.DecorateShape.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.DrawShape\AV.Middle.Pattern.DrawShape.csproj" />
@@ -30,12 +31,14 @@
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ImageViewer\AV.Middle.Pattern.ImageViewer.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.IteratorPattern\AV.Middle.Pattern.IteratorPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.MediaPlayer\AV.Middle.Pattern.MediaPlayer.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.MementoPattern\AV.Middle.Pattern.MementoPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.MultiLogger\AV.Middle.Pattern.MultiLogger.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Restaurant\AV.Middle.Pattern.Restaurant.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ShapeMaker\AV.Middle.Pattern.ShapeMaker.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.ShapePrototype\AV.Middle.Pattern.ShapePrototype.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.Shape\AV.Middle.Pattern.Shape.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.StockBroker\AV.Middle.Pattern.StockBroker.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\AV.Middle.Pattern.StockObserver\AV.Middle.Pattern.StockObserver.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.DatabaseController\AV.Middle.Reflector.DatabaseController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.FileController\AV.Middle.Reflector.FileController.csproj" />
     <ProjectReference Include="..\..\..\Middle\Reflector\AV.Middle.Reflector.IService\AV.Middle.Reflector.IService.csproj" />

@@ -5,15 +5,15 @@ using System.Text;
 
 namespace AV.Middle.Reflector.IService
 {
-    public class ProcessDecorator : ProcessTemplate, IDecorate
+    public class ProcessDecorator<T> : ProcessTemplate<T>, IDecorate<T>
 	{
-		public ProcessDecorator(IProcess process, Hashtable hashtable) : base(process, hashtable)
+		public ProcessDecorator(Hashtable hashtable) : base(hashtable)
 		{
 		}
 
-		public override void Run()
+		public override void Run(T entity)
 		{
-			base.Run();
+			base.Run(entity);
 		}
     }
 }
