@@ -18,13 +18,17 @@
     <ProjectReference Include="..\..\..\Middle\Common\AV.Middle.Common.Section\AV.Middle.Common.Section.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.GenericLog\AV.Middle.Extension.GenericLog.csproj" />
     <ProjectReference Include="..\..\..\Middle\Extension\AV.Middle.Extension.Generic\AV.Middle.Extension.Generic.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.Arithmetic\AV.Middle.Pattern.Behavioral.Arithmetic.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.ChatRoom\AV.Middle.Pattern.Behavioral.ChatRoom.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.CheckCustomer\AV.Middle.Pattern.Behavioral.CheckCustomer.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.ComputerParts\AV.Middle.Pattern.Behavioral.ComputerParts.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.DuckGame\AV.Middle.Pattern.Behavioral.DuckGame.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.ExpressionInterpreter\AV.Middle.Pattern.Behavioral.ExpressionInterpreter.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.Game\AV.Middle.Pattern.Behavioral.Game.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.IteratorPattern\AV.Middle.Pattern.Behavioral.IteratorPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.MementoPattern\AV.Middle.Pattern.Behavioral.MementoPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.MultiLogger\AV.Middle.Pattern.Behavioral.MultiLogger.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.StatePattern\AV.Middle.Pattern.Behavioral.StatePattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.StockBroker\AV.Middle.Pattern.Behavioral.StockBroker.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.StockObserver\AV.Middle.Pattern.Behavioral.StockObserver.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Creational\AV.Middle.Pattern.Creational.Geometry\AV.Middle.Pattern.Creational.Geometry.csproj" />
