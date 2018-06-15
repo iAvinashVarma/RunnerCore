@@ -1,5 +1,6 @@
 ﻿using AV.Middle.Pattern.Behavioral.Arithmetic.Concrete;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Concrete.Operation;
+using AV.Middle.Pattern.Behavioral.Arithmetic.Helper;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Interface;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Model;
 using AV.Middle.Reflector.IService;
@@ -20,13 +21,12 @@ namespace AV.Middle.Pattern.Behavioral.Arithmetic
 
 		public void Start()
 		{
-			var number = new Number(10, 5);
-			logger.Info($"{number.NumberOne} + {number.NumberTwo} = {StrategyHelper(new Context(new Add()), number)}");
-			logger.Info($"{number.NumberOne} - {number.NumberTwo} = {StrategyHelper(new Context(new Substract()), number)}");
-			logger.Info($"{number.NumberOne} * {number.NumberTwo} = {StrategyHelper(new Context(new Multiply()), number)}");
+			var number = new Number(int.MaxValue, int.MaxValue);
+			var helper = new StrategyHelper();
+			logger.Info($"{number.NumberOne} + {number.NumberTwo} = {helper.DoStrategy(new Context(new Add()), number)}");
+			logger.Info($"{number.NumberOne} - {number.NumberTwo} = {helper.DoStrategy(new Context(new Substract()), number)}");
+			logger.Info($"{number.NumberOne} * {number.NumberTwo} = {helper.DoStrategy(new Context(new Multiply()), number)}");
 		}
-
-		private int StrategyHelper(Context context, Number number) => context.ExecuteStrategy(number);
 
 	public bool Validate() => true;
 	}

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AV.Middle.Extension.Generic;
+using System;
 using System.Collections.Generic;
 
 namespace AV.Middle.Common.Logger.Observer
@@ -7,12 +8,9 @@ namespace AV.Middle.Common.Logger.Observer
 	{
 		private static volatile Logger instance = null;
 		private static readonly object mutex = new Object();
-		private List<ILogger> loggers = null;
+		private List<ILogger> _loggers = null;
 
-		private Logger()
-		{
-			loggers = new List<ILogger>();
-		}
+		private Logger() => _loggers = new List<ILogger>();
 
 		public static Logger Instance
 		{
@@ -34,16 +32,13 @@ namespace AV.Middle.Common.Logger.Observer
 
 		public void RegisterObservers(ILogger logger)
 		{
-			if (!loggers.Contains(logger))
-				loggers.Add(logger);
+			if (!_loggers.Contains(logger))
+				_loggers.Add(logger);
 		}
 
-		public void LogMessage(string message, bool isTimeStamp = false)
-		{
-			foreach (var logger in loggers)
-			{
-				logger.LogMessage(isTimeStamp ? $"{DateTime.Now.ToString()} - {message}" : message);
-			}
-		}
+
+		public void RegisterObservers(HashSet<ILogger> loggers) => loggers.ForEach(x => _loggers.Add(x));
+
+		public void LogMessage(string message, bool isTimeStamp = false) => _loggers.ForEach(x => x.LogMessage(isTimeStamp ? $"{DateTime.Now.ToString()} - {message}" : message));
 	}
 }

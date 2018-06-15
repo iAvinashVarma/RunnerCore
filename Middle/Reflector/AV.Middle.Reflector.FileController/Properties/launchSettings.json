@@ -2,7 +2,7 @@
 	"profiles": {
 		"AV.Middle.Reflector.FileConverter": {
 			"commandName": "Project",
-			"commandLineArgs": "/Process=ToJson /FilePath=C:\\AVI\\Practice\\ProgLan\\Main\\VDrive\\Client\\Console\\RunnerCore\\Middle\\Reflector\\AV.Middle.Reflector.UpdateRoles\\Replacer.xml"
+			"commandLineArgs": "/Process=ConvertToFile /FilePath=C:\\AVI\\Practice\\ProgLan\\Main\\VDrive\\Client\\Console\\RunnerCore\\Middle\\Reflector\\AV.Middle.Reflector.UpdateRoles\\Replacer.xml"
 		}
 	}
 }

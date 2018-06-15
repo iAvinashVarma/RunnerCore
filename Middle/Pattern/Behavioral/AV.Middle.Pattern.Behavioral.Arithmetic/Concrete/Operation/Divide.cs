@@ -6,8 +6,8 @@ using System.Text;
 
 namespace AV.Middle.Pattern.Behavioral.Arithmetic.Concrete.Operation
 {
-	public class Multiply : IStrategy
+    public class Divide : IStrategy
 	{
-		public int DoOperation(Number number) => checked(number.NumberOne * number.NumberTwo);
+		public int DoOperation(Number number) => checked(number.NumberOne / number.NumberTwo);
 	}
 }

@@ -8,6 +8,6 @@ namespace AV.Middle.Pattern.Behavioral.Arithmetic.Concrete.Operation
 {
 	public class Substract : IStrategy
 	{
-		public int DoOperation(Number number) => number.NumberOne - number.NumberTwo;
+		public int DoOperation(Number number) => checked(number.NumberOne - number.NumberTwo);
 	}
 }

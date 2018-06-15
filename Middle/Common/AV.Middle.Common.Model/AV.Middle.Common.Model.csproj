@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AV.Middle.Common.Logger\AV.Middle.Common.Logger.csproj" />
+  </ItemGroup>
+
 </Project>

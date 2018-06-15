@@ -28,6 +28,7 @@
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.IteratorPattern\AV.Middle.Pattern.Behavioral.IteratorPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.MementoPattern\AV.Middle.Pattern.Behavioral.MementoPattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.MultiLogger\AV.Middle.Pattern.Behavioral.MultiLogger.csproj" />
+    <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.MVC\AV.Middle.Pattern.Behavioral.MVC.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.StatePattern\AV.Middle.Pattern.Behavioral.StatePattern.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.StockBroker\AV.Middle.Pattern.Behavioral.StockBroker.csproj" />
     <ProjectReference Include="..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.StockObserver\AV.Middle.Pattern.Behavioral.StockObserver.csproj" />
