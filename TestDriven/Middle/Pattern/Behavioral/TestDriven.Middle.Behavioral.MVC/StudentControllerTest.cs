@@ -1,14 +1,14 @@
 using AV.Middle.Pattern.Behavioral.MVC.Controller;
 using AV.Middle.Pattern.Behavioral.MVC.Model;
 using AV.Middle.Pattern.Behavioral.MVC.View;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace TestDriven.Middle.Behavioral.MVC
 {
-    [TestClass]
+    [TestFixture]
     public class StudentControllerTest
     {
-        [TestMethod]
+        [Test]
         public void TestStudentView()
         {
 			var model = new StudentModel

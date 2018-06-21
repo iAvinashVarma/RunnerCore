@@ -3,19 +3,19 @@ using AV.Middle.Pattern.Behavioral.Arithmetic.Concrete.Operation;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Helper;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Interface;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Model;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 
 namespace TestDriven.Middle.Behavioral.Arithmetic
 {
-    [TestClass]
+    [TestFixture]
     public class OperationValidTest
 	{
 		StrategyHelper helper = null;
 
 		public OperationValidTest() => helper = new StrategyHelper();
 
-		[TestMethod]
+		[Test]
 		public void AdditionTest()
 		{
 			// Create instance to test.
@@ -26,22 +26,21 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = add.DoOperation(number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
-		[ExpectedException(typeof(OverflowException))]
+		[Test]
 		public void AdditionThrowsOverflowExceptionTest()
 		{
 			// Create instance to test.
 			var add = new Add();
 			// Define a test input and output value.
 			var number = new Number { NumberOne = int.MaxValue, NumberTwo = int.MaxValue };
-			// Run the method under test.
-			var actual = add.DoOperation(number);
+			// Run the test and verify the result.
+			Assert.Throws<OverflowException>(() => add.DoOperation(number));
 		}
 
-		[TestMethod]
+		[Test]
         public void AdditionStrategyTest()
         {
 			// Create instance to test.
@@ -53,10 +52,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void MultiplicationTest()
 		{
 			// Create instance to test.
@@ -67,22 +66,21 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = multiply.DoOperation(number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
-		[ExpectedException(typeof(OverflowException))]
+		[Test]
 		public void MultiplicationThrowsOverflowExceptionTest()
 		{
 			// Create instance to test.
 			var multiply = new Multiply();
 			// Define a test input and output value.
 			var number = new Number { NumberOne = int.MaxValue, NumberTwo = int.MaxValue };
-			// Run the method under test.
-			var actual = multiply.DoOperation(number);
+			// Run the method under test and verify.
+			Assert.Throws<OverflowException>(() => multiply.DoOperation(number));
 		}
 
-		[TestMethod]
+		[Test]
 		public void MultiplicationStrategyTest()
 		{
 			// Create instance to test.
@@ -94,10 +92,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void SubstractionTest()
 		{
 			// Create instance to test.
@@ -108,11 +106,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = subtract.DoOperation(number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
-		[ExpectedException(typeof(OverflowException))]
+		[Test]
 		public void SubstractionThrowsOverflowExceptionTest()
 		{
 			// Create instance to test.
@@ -120,10 +117,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Define a test input and output value.
 			var number = new Number { NumberOne = int.MaxValue, NumberTwo = int.MinValue };
 			// Run the method under test.
-			var actual = substract.DoOperation(number);
+			Assert.Throws<OverflowException>(() => substract.DoOperation(number));
 		}
 
-		[TestMethod]
+		[Test]
 		public void SubstractionStrategyTest()
 		{
 			// Create instance to test.
@@ -135,10 +132,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void DivisionTest()
 		{
 			// Create instance to test.
@@ -149,11 +146,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = divide.DoOperation(number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 
-		[TestMethod]
-		[ExpectedException(typeof(DivideByZeroException))]
+		[Test]
 		public void DivisionThrowsOverflowExceptionTest()
 		{
 			// Create instance to test.
@@ -161,10 +157,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Define a test input and output value.
 			var number = new Number { NumberOne = int.MaxValue, NumberTwo = 0 };
 			// Run the method under test.
-			var actual = divide.DoOperation(number);
+			Assert.Throws<DivideByZeroException>(() => divide.DoOperation(number));
 		}
 
-		[TestMethod]
+		[Test]
 		public void DivisionStrategyTest()
 		{
 			// Create instance to test.
@@ -176,7 +172,7 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreEqual<int>(expected, actual);
+			Assert.AreEqual(expected, actual);
 		}
 	}
 }

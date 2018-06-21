@@ -2,21 +2,21 @@
 using AV.Middle.Pattern.Behavioral.Arithmetic.Concrete.Operation;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Helper;
 using AV.Middle.Pattern.Behavioral.Arithmetic.Model;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace TestDriven.Middle.Behavioral.Arithmetic
 {
-	[TestClass]
+	[TestFixture]
 	public class OperationInvalidTest
     {
 		StrategyHelper helper = null;
 
 		public OperationInvalidTest() => helper = new StrategyHelper();
 
-		[TestMethod]
+		[Test]
 		public void AdditionNotEqualTest()
 		{
 			// Create instance to test.
@@ -27,10 +27,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = add.DoOperation(number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void AdditionStrategyNotEqualTest()
 		{
 			// Create instance to test.
@@ -42,10 +42,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void MultiplicationNotEqualTest()
 		{
 			// Create instance to test.
@@ -56,10 +56,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = multiply.DoOperation(number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void MultiplicationStrategyNotEqualTest()
 		{
 			// Create instance to test.
@@ -71,10 +71,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void SubstractionNotEqualTest()
 		{
 			// Create instance to test.
@@ -85,10 +85,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = subtract.DoOperation(number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void SubstractionStrategyNotEqualTest()
 		{
 			// Create instance to test.
@@ -100,10 +100,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void DivisionNotEqualTest()
 		{
 			// Create instance to test.
@@ -114,10 +114,10 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = divide.DoOperation(number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 
-		[TestMethod]
+		[Test]
 		public void DivisionStrategyNotEqualTest()
 		{
 			// Create instance to test.
@@ -129,7 +129,7 @@ namespace TestDriven.Middle.Behavioral.Arithmetic
 			// Run the method under test.
 			var actual = helper.DoStrategy(context, number);
 			// Verify the result.
-			Assert.AreNotEqual<int>(expected, actual);
+			Assert.AreNotEqual(expected, actual);
 		}
 	}
 }

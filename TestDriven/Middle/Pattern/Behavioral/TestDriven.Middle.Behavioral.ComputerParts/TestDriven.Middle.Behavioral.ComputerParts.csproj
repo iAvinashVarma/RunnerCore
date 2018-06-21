@@ -10,10 +10,12 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.MVC\AV.Middle.Pattern.Behavioral.MVC.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Middle\Pattern\Behavioral\AV.Middle.Pattern.Behavioral.ComputerParts\AV.Middle.Pattern.Behavioral.ComputerParts.csproj" />
   </ItemGroup>
 
 </Project>
