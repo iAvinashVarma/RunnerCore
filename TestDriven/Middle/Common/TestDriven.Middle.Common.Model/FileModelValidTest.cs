@@ -14,9 +14,21 @@ namespace TestDriven.Middle.Common.Model
 		}
 
 		[Test]
-		public void CheckIfFileExists()
-		{
-			Assert.AreEqual(true, fileModel.IsFileExists);
-		}
+		public void CheckIfFileExists() => Assert.AreEqual(true, fileModel.IsFileExists);
+
+		[Test]
+		public void CheckIfFileIsHavingData() => Assert.IsTrue(!string.IsNullOrEmpty(fileModel.FileData));
+
+		[Test]
+		public void CheckIfFileIsHavingExtension() => Assert.IsTrue(!string.IsNullOrEmpty(fileModel.FileExtension));
+
+		[Test]
+		public void CheckIfFileIsHavingFileNameWithoutExtension() => Assert.IsTrue(!string.IsNullOrEmpty(fileModel.FileNameWithoutExtension));
+
+		[Test]
+		public void CheckIfFileIsHavingDirectory() => Assert.IsTrue(!string.IsNullOrEmpty(fileModel.DirectoryFullPath));
+
+		[Test]
+		public void CheckIfFileIsHavingFileFullPath() => Assert.IsTrue(!string.IsNullOrEmpty(fileModel.FileFullPath));
 	}
 }

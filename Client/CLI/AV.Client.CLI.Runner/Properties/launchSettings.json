@@ -2,7 +2,7 @@
   "profiles": {
     "AV.Client.CLI.Runner": {
       "commandName": "Project",
-      "commandLineArgs": "/Process=ConvertToFile /FilePath=C:\\AVI\\Practice\\Java\\soapui\\environment.json"
+      "commandLineArgs": "/Process=ConvertToFile /FilePath=C:\\AVI\\Practice\\Java\\soapui\\mock\\environment.json"
     }
   }
 }

@@ -43,5 +43,7 @@ namespace AV.Middle.Common.HierarchicalData
 			bool predicate(string p) => new FileModel(_filePath).FileExtension.Equals($".{p}", StringComparison.OrdinalIgnoreCase);
 			return predicate;
 		}
+
+		private bool IsUri(string value) => Uri.TryCreate(value, UriKind.Absolute, out Uri uri) && uri.Scheme == Uri.UriSchemeHttp;
 	}
 }

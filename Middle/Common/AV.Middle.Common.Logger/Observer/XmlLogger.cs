@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Xml;
 
@@ -15,7 +16,24 @@ namespace AV.Middle.Common.Logger.Observer
 		{
 			var xmlDocument = new XmlDocument();
 			xmlDocument.LoadXml(message);
-			xmlDocument.Save(filePath);
+			File.WriteAllText(filePath, BeautifyXml(xmlDocument));
+		}
+
+		private string BeautifyXml(XmlDocument xmlDocument)
+		{
+			var sb = new StringBuilder();
+			var settings = new XmlWriterSettings
+			{
+				Indent = true,
+				IndentChars = "  ",
+				NewLineChars = "\r\n",
+				NewLineHandling = NewLineHandling.Replace
+			};
+			using (var writer = XmlWriter.Create(sb, settings))
+			{
+				xmlDocument.Save(writer);
+			}
+			return sb.ToString();
 		}
 	}
 }

@@ -27,7 +27,10 @@ namespace AV.Middle.Common.HierarchicalData.Concrete
 
 		public HierarchicalDataModel GetHierarchicalDataModel()
 		{
-			var xmlDocument = JsonConvert.DeserializeXmlNode("{\"" + FileModel.FileNameWithoutExtension + "\":" + FileModel.FileData + "}", FileModel.FileNameWithoutExtension + "s");
+			var fileNameWOE = FileModel.FileNameWithoutExtension;
+			var rootElement = fileNameWOE.EndsWith("s") ? fileNameWOE : $"{fileNameWOE}s";
+			var childElement = fileNameWOE.EndsWith("s") ? fileNameWOE.Remove(fileNameWOE.Length - 1) : fileNameWOE;
+			var xmlDocument = JsonConvert.DeserializeXmlNode("{\"" + childElement + "\":" + FileModel.FileData + "}", rootElement);
 			return new HierarchicalDataModel(FileModel)
 			{
 				FileText = xmlDocument.OuterXml,
