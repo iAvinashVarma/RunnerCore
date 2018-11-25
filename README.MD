@@ -57,3 +57,11 @@ C:\AV.Client.Web.Runner> dotnet run
 ```
 
 ---
+
+## Run entire project
+
+```cmd
+C:\RunnerCore> dotnet run
+```
+
+---
