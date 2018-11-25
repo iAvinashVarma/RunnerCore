@@ -31,8 +31,6 @@ namespace AV.Middle.Common.Model
 			set { fileIndented = value; }
 		}
 
-		private string currentFilePath;
-
 		public string CurrentFilePath
 		{
 			get { return $"{Path.Combine(FileModel.DirectoryFullPath, FileModel.FileNameWithoutExtension)}.{CurrentFileExtension}"; }
